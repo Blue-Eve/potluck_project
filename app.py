@@ -1,4 +1,5 @@
 import requests
+import json
 import pickle
 import streamlit as st
 from streamlit_lottie import st_lottie
@@ -28,6 +29,10 @@ def load_lottieurl(url):
         return None
     return r.json()
 
+@st.cache_resource
+def load_lottiefile(path):
+    with open(path, 'r') as f:
+        return json.load(f)
 
 # USE LOCAL CSS
 def local_css(file_name):
@@ -41,9 +46,9 @@ local_css(css_path)
 
 # LOAD ASSETS
 
-lottie_coding = load_lottieurl(
-    "https://assets3.lottiefiles.com/packages/lf20_fefIZO.json"
-)
+#lottie_coding = load_lottieurl('https://assets3.lottiefiles.com/packages/lf20_fefIZO.json')
+lottie_coding = load_lottiefile('style/lottie_animation.json')
+
 
 
 # code for local loading
