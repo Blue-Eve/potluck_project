@@ -26,7 +26,7 @@ source_data/
 data/
 
 # Saved models
-models/
+potluck_code/food2vec_models/
 *.joblib
 
 # Any pickle files
