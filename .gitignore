@@ -39,7 +39,6 @@ potluck_code/food2vec_models/
 .env.yaml
 .credentials
 .streamlit/secrets.toml
-*.json
 
 # User defined extras
 # Complete to your desire

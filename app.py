@@ -54,7 +54,7 @@ lottie_coding = load_lottiefile('style/lottie_animation.json')
 # code for local loading
 @st.cache_data
 def load_df():
-    data_path = "raw_data/clean_df.pkl"
+    data_path = "data/clean_df.pkl"
     df = pd.read_pickle(data_path)
     return df
 
@@ -84,7 +84,7 @@ df = load_df()
 
 @st.cache_resource
 def load_model():
-    data_path2 = "potluck_code/food2vec_models/model.bin"
+    data_path2 = "data/model.bin"
     model = Word2Vec.load(data_path2)
     return model
 

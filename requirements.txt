@@ -5,6 +5,7 @@ streamlit
 requests
 streamlit_lottie
 gensim
+nltk
 # google-cloud-storage
 
 # git+https://github.com/TimB808/potluck_project
