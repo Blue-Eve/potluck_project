@@ -3,8 +3,6 @@
 Potluck is a final project of the 9-week full-time data science bootcamp, created by Alex, Eva, Omar and Tim.
 This repo is a fork of the original code.
 
-A live version can be found at [potluck.solutions](https://potluck.solutions/)
-
 ## Motivation
 
 The motivation of this project is creating a receipe-search site which returns recipes with the ingredients you have - or similar ones.
